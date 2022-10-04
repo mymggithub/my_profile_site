@@ -18,7 +18,7 @@ class UserAppAsset extends AssetBundle
         'fonts/font-awesome.min.css',
 		'fonts/fontawesome5-overrides.min.css',
         '//kendo.cdn.telerik.com/2022.1.412/styles/kendo.default-ocean-blue.min.css',
-        'css/site_ui.css',
+        'css/kendo_additions.css',
     ];
     public $js = [
         '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
@@ -28,7 +28,7 @@ class UserAppAsset extends AssetBundle
 		'js/chart.min.js',
 		'js/bs-init.js',
 		'js/theme.js',
-        'js/t.js',
+        'js/kendo_additions.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
