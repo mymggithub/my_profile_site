@@ -1,0 +1,496 @@
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    /*background-color: #f5f5f5;*/
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+
+
+/*======================================
+=            frontend login            =
+======================================*/
+
+
+form.user .btn-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: 0.75rem 1rem;
+}
+
+.btn-google {
+    color: #fff !important;
+    background-color: #ea4335 !important;
+    border-color: #fff !important;
+}
+
+.btn-facebook {
+    color: #fff !important;
+    background-color: #3b5998 !important;
+    border-color: #fff !important;
+}
+
+.login-lnk {
+    color: #4e73df;
+    text-decoration: underline;
+}
+
+form.user .form-control-user {
+    font-size: .8rem !important;
+    border-radius: 10rem !important;
+    padding: 1.5rem !important;
+}
+
+.form-check .form-check-input {
+    float: left !important;
+    margin-left: -1.5em !important;
+}
+.card{
+    opacity: 0.9 !important;
+}
+
+/*=====  End of frontend login  ======*/
+/*===============================
+=            devices            =
+===============================*/
+
+  canvas {display: block;}
+  .smartphone .content_devices_view{
+    padding: 0px 0 20px 0;
+  }
+  .laptop .content_devices_view{
+    width: 200px;
+    padding: 0px 0 20px 0px;
+  }
+
+/*=====  End of devices  ======*/
+
+
+
+
+/*=================================
+=            home text            =
+=================================*/
+
+
+.typing_wrapper{
+  display: inline-flex;
+}
+.typing_wrapper .static_txt{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  height: 55px;
+  border-bottom: white 1px dashed;
+}
+.typing_wrapper .dynamic_txts{
+  margin-left: -25px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic_txts li{
+  list-style: none;
+  color: #42dca3;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 4s steps(3) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -270px;
+  }
+}
+.dynamic_txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 60px;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+}
+
+/*=====  End of home text  ======*/
+
+
+/*===========================================
+=            Auto resize youtube            =
+===========================================*/
+
+.video-wrap {
+  width: 100%;
+}
+.yt_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.yt_video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/*=====  End of Auto resize youtube  ======*/
+
+
+/*================================
+=            Timeline            =
+================================*/
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none
+}
+
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px
+}
+
+.timeline>li:after,
+.timeline>li:before {
+    display: table;
+    content: " "
+}
+
+.timeline>li:after {
+    clear: both
+}
+
+.timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0
+}
+
+.timeline>li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: #fff;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #338f75
+}
+
+.timeline>li .timeline-image h4,
+.timeline>li .timeline-image .h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0
+}
+
+.timeline .timeline-heading h4,
+.timeline .timeline-heading .h4 {
+    margin-top: 0;
+    color: inherit
+}
+
+.timeline .timeline-heading h4.subheading,
+.timeline .timeline-heading .subheading.h4 {
+    text-transform: none
+}
+
+.timeline .timeline-body>ul,
+.timeline .timeline-body>p {
+    margin-bottom: 0
+}
+
+@media(min-width: 768px) {
+    .timeline:before {
+        left: 50%
+    }
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px
+    }
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right
+    }
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px
+    }
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left
+    }
+}
+
+@media(min-width: 992px) {
+    .timeline>li {
+        min-height: 150px
+    }
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px
+    }
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px
+    }
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px
+    }
+}
+
+@media(min-width: 1200px) {
+    .timeline>li {
+        min-height: 170px
+    }
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px
+    }
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px
+    }
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        margin-top: 40px
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px
+    }
+}
+
+#about ul.list-group li {
+    border: none;
+    background: none
+}
+.timeline h4 {
+    /*margin: 40px 0 8px 0 !important;*/
+}
+
+.timeline-heading>h4{
+    color: #338f75 !important;
+}
+
+.timeline-image>a{
+    color: #fff !important;
+}
+
+/*=====  End of Timeline  ======*/
+
+
+/*====================================
+=            Contact Form            =
+====================================*/
+
+element.style {
+    background-image: url(assets/img/map-image.png);
+}
+section#contact {
+    /* background-color: #212529; */­
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (min-width: 768px)
+section {
+    padding: 150px 0;
+}
+section {
+    padding: 100px 0;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 248px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section h3.section-subheading, section .section-subheading.h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*=====  End of Contact Form  ======*/
