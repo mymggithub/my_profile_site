@@ -44,3 +44,6 @@ phpunit.phar
 
 #ignore db config
 /common/config/main-local.php
+
+# ignore things to add
+/add_later
