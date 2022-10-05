@@ -16,6 +16,7 @@ use Yii;
  */
 class Twitter extends \yii\db\ActiveRecord
 {
+    const SCENARIO_ADD = 'add';
     /**
      * {@inheritdoc}
      */
@@ -36,6 +37,11 @@ class Twitter extends \yii\db\ActiveRecord
         ];
     }
 
+    public function scenarios(){
+        $scenarios = parent::scenarios();
+        $scenarios['add'] = ['proj_id', 'account', 'following', 'followers', 'description'];
+        return $scenarios;
+    }
     /**
      * {@inheritdoc}
      */
