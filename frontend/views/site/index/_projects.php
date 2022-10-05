@@ -12,7 +12,7 @@ use yii\helpers\Html;
                 <h1>Working hard to get what you want to work across devices</h1>
                 <br>
                 <br>
-                <div class="center">
+                <div class="center_devices">
                   <div class="smartphone">
                     <div class="content_devices_view">
                     <canvas class="matrix">+-x1/\</canvas>

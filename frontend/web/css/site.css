@@ -163,29 +163,67 @@ form.user .form-control-user {
 }
 .typing_wrapper .static_txt{
   color: #fff;
-  font-size: 40px;
   font-weight: 400;
-  height: 55px;
   border-bottom: white 1px dashed;
+}
+@media(max-width:500px) {
+  .typing_wrapper .static_txt{
+    font-size: 20px;
+    height: 30px;
+  }
+}
+@media(min-width:501px) {
+  .typing_wrapper .static_txt{
+    font-size: 40px;
+    height: 55px;
+  }
 }
 .typing_wrapper .dynamic_txts{
   margin-left: -25px;
-  height: 90px;
-  line-height: 90px;
   overflow: hidden;
+}
+@media(max-width:500px) {
+    .typing_wrapper .dynamic_txts {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+@media(min-width:501px) {
+    .typing_wrapper .dynamic_txts {
+        height: 90px;
+        line-height: 90px;
+    }
 }
 .dynamic_txts li{
   list-style: none;
   color: #42dca3;
-  font-size: 60px;
   font-weight: 500;
   position: relative;
   top: 0;
   animation: slide 4s steps(3) infinite;
 }
-@keyframes slide {
-  100%{
-    top: -270px;
+@media(max-width:500px) {
+    .dynamic_txts li{
+        font-size: 40px;
+    }
+}
+@media(min-width:501px) {
+    .dynamic_txts li{
+        font-size: 60px;
+    }
+}
+@media(max-width:500px) {
+  @keyframes slide {
+    100%{
+      top: -150px; 
+    }
+  }
+}
+@media(min-width:501px) {
+  @keyframes slide {
+    100%{
+      top: -270px; /*3 * typing_wrapper .dynamic_txts{height and line-height}*/
+    }
   }
 }
 .dynamic_txts li span{
@@ -194,6 +232,16 @@ form.user .form-control-user {
   line-height: 60px;
 }
 
+@media(max-width:500px) {
+    .dynamic_txts li span{
+        line-height: 40px;
+    }
+}
+@media(min-width:501px) {
+    .dynamic_txts li span{
+        line-height: 60px;
+    }
+}
 @keyframes typing {
   40%, 60%{
     left: calc(100% + 30px);

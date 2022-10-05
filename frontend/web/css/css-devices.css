@@ -1,4 +1,4 @@
-.center {
+.center_devices {
   /*position:absolute;*/
   margin:auto;
   top:0;
@@ -9,23 +9,23 @@
   /*height:200px;*/
 }
 @media(max-width:500px) {
-  .center {
-    height:300px;
+  .center_devices {
+    height:400px;
     width:214px;
   }
 }
 @media(min-width:501px) {
-  .center {
+  .center_devices {
     height:200px;
   }
 }
 @media(min-width: 501px) and (max-width: 768px) {
-  .center {
+  .center_devices {
     width:420px;
   }
 }
 @media(min-width:768px) {
-  .center {
+  .center_devices {
     width:580px;
   }
 }
