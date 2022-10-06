@@ -47,3 +47,6 @@ phpunit.phar
 
 # ignore things to add
 /add_later
+
+# ignore folder
+/backend/view/layout/ignore

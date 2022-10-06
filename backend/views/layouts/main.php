@@ -23,7 +23,7 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-<?php echo $this->render('_nav') ?>
+<?php echo $this->render('_nav_u_ui') ?>
 
 
 <main role="main" class="flex-shrink-0">
