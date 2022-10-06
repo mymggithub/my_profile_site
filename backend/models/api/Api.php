@@ -20,7 +20,7 @@ class Api extends \yii\base\Module
         parent::init();
 
         // custom initialization code goes here
-        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSONP;
     }
     public static function createCallback($callname, $arr_tmp){
         $callname = strtolower(str_replace('action', '', $callname)).'ApiCallback';
