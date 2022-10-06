@@ -25,8 +25,8 @@ class Api extends \yii\base\Module
     public static function createCallback($callname, $arr_tmp){
         $callname = strtolower(str_replace('action', '', $callname)).'ApiCallback';
         if (\Yii::$app->response->format == 'jsonp') {
-            $arr_tmp['callback'] = $callname;
-            return $arr_tmp;
+            $arr_tmp['callback'] = $callname;  
         }
+        return $arr_tmp;
     }
 }
