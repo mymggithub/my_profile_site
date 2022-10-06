@@ -26,4 +26,8 @@ class TwitterController extends \yii\web\Controller
             return Api::createCallback(__FUNCTION__, ['data' => $stock_range_75->getErrors()]);
         }
     }
+    public function actionPing()
+    {
+        return Api::createCallback(__FUNCTION__, ['data' => 'Pong']);
+    }
 }
