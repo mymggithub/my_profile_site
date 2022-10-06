@@ -18,7 +18,7 @@ use yii\helpers\Html;
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-group timeline">
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/it.jpg"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -30,7 +30,7 @@ use yii\helpers\Html;
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item timeline-inverted">
+                        <li class="list-group-item timeline-inverted" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/sf.jpg"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -42,7 +42,7 @@ use yii\helpers\Html;
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/pc.jpg"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -54,7 +54,7 @@ use yii\helpers\Html;
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item timeline-inverted">
+                        <li class="list-group-item timeline-inverted" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/mx.jpg"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -66,7 +66,7 @@ use yii\helpers\Html;
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/ca.jpg"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -78,7 +78,7 @@ use yii\helpers\Html;
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item timeline-inverted">
+                        <li class="list-group-item timeline-inverted" data-aos="fade-up" data-aos-duration="2000">
                             <div class="timeline-image">
                                 <a href="<?php echo Yii::$app->homeUrl.'#contact'; ?>">
                                     <h4>Be Part<br>&nbsp;Of The<br>&nbsp;Story!</h4>

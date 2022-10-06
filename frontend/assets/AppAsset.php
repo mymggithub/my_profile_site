@@ -23,6 +23,7 @@ class AppAsset extends AssetBundle
         '//use.fontawesome.com/releases/v5.12.0/css/all.css',
         '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
         'fonts/font-awesome.min.css',
+        '//unpkg.com/aos@2.3.1/dist/aos.css',
 
         'css/css-devices.css',
         'css/site.css',
@@ -30,6 +31,7 @@ class AppAsset extends AssetBundle
         'css/fake-browser.css',
     ];
     public $js = [
+        '//unpkg.com/aos@2.3.1/dist/aos.js',
         'js/Video-Parallax-Background-v3.js',
         'js/bootstrap.min.js',
         'js/matrix.js',

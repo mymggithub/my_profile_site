@@ -58,6 +58,10 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 <?php $this->endPage();
+
