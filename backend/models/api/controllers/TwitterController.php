@@ -8,6 +8,23 @@ use \backend\models\api\Api;
 
 class TwitterController extends \yii\web\Controller
 {
+
+    /**
+     * List of allowed domains.
+     * Note: Restriction works only for AJAX (using CORS, is not secure).
+     *
+     * @return array List of domains, that can access to this API
+     */
+    public static function allowedDomains()
+    {
+        return [
+            '*',                        // star allows all domains
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function behaviors()
     {
         return array_merge(parent::behaviors(), [
