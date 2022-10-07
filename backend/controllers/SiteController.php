@@ -24,11 +24,11 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['index', 'error'],
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'dashboard'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -43,6 +43,7 @@ class SiteController extends Controller
         ];
     }
 
+
     /**
      * {@inheritdoc}
      */
@@ -51,6 +52,7 @@ class SiteController extends Controller
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+                'layout' => 'blank'
             ],
         ];
     }
@@ -62,32 +64,25 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
-    }
-
-    /**
-     * Login action.
-     *
-     * @return string|Response
-     */
-    public function actionLogin()
-    {
         if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->redirect(['dashboard']);
+        }else{
+            $this->layout = 'blank';
+            $model = new LoginForm();
+            if ($model->load(Yii::$app->request->post()) && $model->login()) {
+                return $this->redirect(['dashboard']);
+            }
+
+            $model->password = '';
+
+            return $this->render('login', [
+                'model' => $model,
+            ]);
         }
-
-        $this->layout = 'blank';
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-
-        $model->password = '';
-
-        return $this->render('login', [
-            'model' => $model,
-        ]);
+    }
+    public function actionDashboard()
+    {
+        return $this->render('dashboard');
     }
 
     /**
@@ -98,7 +93,6 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
-        return $this->goHome();
+        return $this->redirect(['index']);
     }
 }
